@@ -13,8 +13,9 @@
           // console.log(response)
         response.text()
         )
-        .then((text) => JSON.parse(JSON.parse(response)))
-        // .then((body) => console.log(body));
+        .then((body) => {
+          document.querySelector("#view").innerHTML = body;
+        });
     </script>
   </body>
 </html>

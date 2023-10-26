@@ -1,11 +1,11 @@
 // Promise 생성
-// Promise 생성자에 (resolve, reject) 파라미터로 하는 함수를 집어 넣음.
+// Promise 생성자에 (resolve, reject) 파라미터로 성공함수, 실패함수를 집어 넣음.
 const p = new Promise((resolve, reject) => {
   console.log("p 작업이 수행 중입니다.");
   // 1. 작업을 수행
   let task = true;
   // 작업(성공할 수도 있고 실패할 수도 있는)을 수행
-  // 시간이 오래 걸리는 작업
+  // 시간이 오래 걸리는 작업 (비동기작업일 수도 있음)
 
   // 2. 작업의 수행 결과를 결정
   // 성공 또는 실패로 끝맺음

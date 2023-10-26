@@ -4,9 +4,9 @@ let user1 = {
   age: 40,
 };
 
-let user2 = user1;
+let user2 = user1; //얕은 복사
 
-let user3 = { ...user1 };
+let user3 = { ...user1 }; //깊은복사
 
 user2.age = 50;
 console.log(user1);
